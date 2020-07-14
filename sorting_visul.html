@@ -1,0 +1,23 @@
+<html>
+   <head>
+    <script src="visuliser.js"></script>
+   </head> 
+
+   <body style="overflow:hidden;">
+       <div style="background-color:orange;padding:0px;">
+           <h1 style="text-align: center;color: #3385ff;border-color: chocolate;padding: 10px;">Sorting Algorithm Visualizer</h1>
+       </div>
+       <div>
+            <select style="font-size: medium;" name="select_algos" id="algos">
+              <option value="bsort">Bubble Sort</option>
+            <option value="isort">Insertion Sort</option>
+            <option value="ssort">Selection Sort</option>
+            </select>
+           <input style="font-size: medium;font-weight: 400;" type="button" value=START onclick="select_sortalgo()">
+           <input style="font-size: medium;font-weight: 400;margin-left: 20px;" type="button" value=RANDOMIZE onclick="randomize()">
+           <br>
+             <div id="theDiv" style="width: 100%;height:85%;margin-top: 10px;">
+           <canvas id="canvas" width="200" height="50%"></canvas>
+             </div>
+   </body>
+</html>
